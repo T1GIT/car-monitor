@@ -20,13 +20,13 @@ jobs:
       - name: Install dependencies
         run: yarn install --frozen-lockfile
 
-      - name: Create env
-        run: |
-          touch .env
-          echo VITE_OMNICOMM_LOGIN=${{ secrets.OMNICOMM_LOGIN }} >> .env
-          echo VITE_OMNICOMM_PASSWORD=${{ secrets.OMNICOMM_PASSWORD }} >> .env
-          echo VITE_MAPBOX_TOKEN=${{ secrets.MAPBOX_TOKEN }} >> .env
-          cat .env
+#      - name: Create env
+#        run: |
+#          touch .env
+#          echo VITE_OMNICOMM_LOGIN=${{ secrets.OMNICOMM_LOGIN }} >> .env
+#          echo VITE_OMNICOMM_PASSWORD=${{ secrets.OMNICOMM_PASSWORD }} >> .env
+#          echo VITE_MAPBOX_TOKEN=${{ secrets.MAPBOX_TOKEN }} >> .env
+#          cat .env
 
       - name: Build app
         run: yarn build
