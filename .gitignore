@@ -6,7 +6,6 @@
 
 # Environment
 /.env*.local
-/.env
 
 # Logs
 logs
