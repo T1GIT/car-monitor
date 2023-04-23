@@ -20,21 +20,8 @@ jobs:
       - name: Install dependencies
         run: yarn install --frozen-lockfile
 
-#      - name: Create env
-#        run: |
-#          touch .env
-#          echo VITE_OMNICOMM_LOGIN=${{ secrets.OMNICOMM_LOGIN }} >> .env
-#          echo VITE_OMNICOMM_PASSWORD=${{ secrets.OMNICOMM_PASSWORD }} >> .env
-#          echo VITE_MAPBOX_TOKEN=${{ secrets.MAPBOX_TOKEN }} >> .env
-#          cat .env
-
       - name: Build app
         run: yarn build
-        env:
-          VITE_OMNICOMM_LOGIN: balaklavskoeru
-          VITE_OMNICOMM_PASSWORD: Bru080223
-          VITE_MAPBOX_TOKEN: pk.eyJ1IjoidDFtb24iLCJhIjoiY2xncXlicHd6MGUwZzNqczN4dG4zdjFtdiJ9.SSzBKWgiwuKKg1I8YHM4ww
-
       - name: Deploy to Netlify
         uses: nwtgck/actions-netlify@v2.0
         with:
