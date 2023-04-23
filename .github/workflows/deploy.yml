@@ -7,6 +7,11 @@ jobs:
   netlify:
     runs-on: ubuntu-latest
 
+    env:
+      VITE_OMNICOMM_LOGIN: ${{ secrets.OMNICOMM_LOGIN }}
+      VITE_OMNICOMM_PASSWORD: ${{ secrets.OMNICOMM_PASSWORD }}
+      VITE_MAPBOX_TOKEN: ${{ secrets.MAPBOX_TOKEN }}
+
     steps:
       - name: Checkout
         uses: actions/checkout@v3
