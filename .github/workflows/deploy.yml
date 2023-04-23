@@ -31,9 +31,9 @@ jobs:
       - name: Build app
         run: yarn build
         env:
-          VITE_OMNICOMM_LOGIN: ${{ secrets.OMNICOMM_LOGIN }}
-          VITE_OMNICOMM_PASSWORD: ${{ secrets.OMNICOMM_PASSWORD }}
-          VITE_MAPBOX_TOKEN: ${{ secrets.MAPBOX_TOKEN }}
+          VITE_OMNICOMM_LOGIN: balaklavskoeru
+          VITE_OMNICOMM_PASSWORD: Bru080223
+          VITE_MAPBOX_TOKEN: pk.eyJ1IjoidDFtb24iLCJhIjoiY2xncXlicHd6MGUwZzNqczN4dG4zdjFtdiJ9.SSzBKWgiwuKKg1I8YHM4ww
 
       - name: Deploy to Netlify
         uses: nwtgck/actions-netlify@v2.0
