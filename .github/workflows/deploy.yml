@@ -1,4 +1,4 @@
-name: Netlify
+name: Deploy
 
 on:
   workflow_dispatch:
