@@ -1,12 +1,12 @@
 <script setup lang="ts">
-import Calendar from 'primevue/calendar'
 import Chart from 'primevue/chart'
 import SelectButton from 'primevue/selectbutton'
 import { computed, shallowRef, toRefs } from 'vue'
 import { useCssVar, useVModel } from '@vueuse/core'
-import moment from 'moment'
 import type { FuelData } from '@/omnicomm/dto/fuel-data'
 import type { TrackPoint } from '@/omnicomm/dto/track-point'
+import DateRange from '@/shared/components/DateRange.vue'
+import { convertTimestamp } from '@/shared/utils/timestamp'
 
 const props = defineProps<{
   range: [Date, Date]
@@ -35,7 +35,7 @@ const commonDatasetOptions = {
 }
 
 const fuelDataset = computed(() => ({
-  labels: fuel.value?.map(({ eD }) => moment.unix(eD).toDate().toDateString()) ?? [],
+  labels: fuel.value?.map(({ eD }) => convertTimestamp(eD).toLocaleDateString()) ?? [],
   datasets: [
     {
       ...commonDatasetOptions,
@@ -46,7 +46,7 @@ const fuelDataset = computed(() => ({
 }))
 
 const speedDataset = computed(() => ({
-  labels: track.value?.map(({ date }) => moment.unix(date).toDate().toDateString()) ?? [],
+  labels: track.value?.map(({ date }) => convertTimestamp(date).toLocaleDateString()) ?? [],
   datasets: [
     {
       ...commonDatasetOptions,
@@ -74,14 +74,7 @@ const dataset = computed(() => chartType.value.value === 'fuel' ? fuelDataset.va
         </template>
       </SelectButton>
 
-      <Calendar
-        v-model="range"
-        class="calendar"
-        selection-mode="range"
-        show-time
-        show-on-focus
-        show-icon
-      />
+      <DateRange v-model:range="range" class="date-range" />
     </div>
 
     <Chart
@@ -119,7 +112,7 @@ const dataset = computed(() => chartType.value.value === 'fuel' ? fuelDataset.va
     align-items: stretch;
     gap: 10px;
 
-    .calendar {
+    .date-range {
       flex: 1;
     }
 

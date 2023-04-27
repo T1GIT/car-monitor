@@ -1,7 +1,7 @@
 <script setup lang="ts">
 import Splitter from 'primevue/splitter'
 import SplitterPanel from 'primevue/splitterpanel'
-import { useVehicles } from '@/cars/stores/vehicals'
+import { useVehicles } from '@/cars/stores/vehicles'
 import { useSelectedVehicle } from '@/cars/stores/selected-vehicle'
 import { useSelectedVehicleStats } from '@/cars/stores/selected-vehicle-stats'
 import CarMap from '@/cars/components/TheCarMap.vue'
@@ -45,6 +45,10 @@ const { range, fuel, track } = useSelectedVehicleStats()
 
     &.map,  &.info {
       padding: 10px;
+    }
+
+    &.table, &.map, &.info {
+      min-width: 100px;
     }
 
     .cars-table, .car-map, .car-info {

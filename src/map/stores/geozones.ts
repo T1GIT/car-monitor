@@ -11,7 +11,7 @@ const useGlobalState = createGlobalState(() => ({
   geozones: shallowRef<Geozone[]>(),
 }))
 
-export const useOmnicommGeozones = createSharedComposable(() => {
+export const useGeozones = createSharedComposable(() => {
   const { geozones } = useGlobalState()
 
   async function fetch() {
