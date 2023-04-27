@@ -24,6 +24,7 @@ export default defineConfig({
         'src/**/filters/*.ts',
         'src/**/guards/*.ts',
         'src/**/utils/*.ts',
+        'src/**/constants/*.ts',
         'src/**/*.vue',
       ],
       reportsDirectory: 'coverage',

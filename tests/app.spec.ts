@@ -28,6 +28,10 @@ describe('App', () => {
     await router.isReady()
   })
 
+  it('should be visible', () => {
+    expect(wrapper.isVisible()).toBeTruthy()
+  })
+
   it('should contain header', () => {
     expect(wrapper.find('[data-test=header]').exists()).toBeTruthy()
   })

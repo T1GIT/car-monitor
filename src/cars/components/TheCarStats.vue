@@ -6,7 +6,6 @@ import { useCssVar, useVModel } from '@vueuse/core'
 import type { FuelData } from '@/omnicomm/dto/fuel-data'
 import type { TrackPoint } from '@/omnicomm/dto/track-point'
 import DateRange from '@/shared/components/DateRange.vue'
-import { convertTimestamp } from '@/shared/utils/timestamp'
 
 const props = defineProps<{
   range: [Date, Date]
@@ -35,7 +34,7 @@ const commonDatasetOptions = {
 }
 
 const fuelDataset = computed(() => ({
-  labels: fuel.value?.map(({ eD }) => convertTimestamp(eD).toLocaleDateString()) ?? [],
+  labels: fuel.value?.map(({ eD }) => new Date(eD * 1000).toLocaleDateString()) ?? [],
   datasets: [
     {
       ...commonDatasetOptions,
@@ -46,7 +45,7 @@ const fuelDataset = computed(() => ({
 }))
 
 const speedDataset = computed(() => ({
-  labels: track.value?.map(({ date }) => convertTimestamp(date).toLocaleDateString()) ?? [],
+  labels: track.value?.map(({ date }) => new Date(date * 1000).toLocaleDateString()) ?? [],
   datasets: [
     {
       ...commonDatasetOptions,
