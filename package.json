@@ -5,9 +5,8 @@
     },
     "license": "AGPL-3.0",
     "scripts": {
-        "dev": "vite --open --host --port 8080",
+        "dev": "vite --host --port 8080",
         "build": "vite build",
-        "preview": "vite preview --port 4000",
         "lint": "eslint . --fix",
         "test:unit": "vitest run --coverage",
         "test:e2e": "cypress run"

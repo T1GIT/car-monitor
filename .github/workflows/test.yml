@@ -15,7 +15,7 @@ jobs:
       - name: Set up NodeJS
         uses: actions/setup-node@v3
         with:
-          node-version: 18
+          node-version: 16
           cache: yarn
 
       - name: Install dependencies
@@ -27,11 +27,11 @@ jobs:
       - name: Run unit tests
         run: yarn run test:unit
 
-      - name: Run build
-        run: yarn build
-
       - name: Run e2e tests
         uses: cypress-io/github-action@v5
         with:
-          start: yarn preview
-          browser: chrome
+          start: yarn dev
+          wait-on: http://127.0.0.1:8080
+
+      - name: Run build
+        run: yarn build
