@@ -1,0 +1,623 @@
+{
+    "id": 6594,
+    "parentGroupId": null,
+    "name": "Балаклавское РУ",
+    "objects": [
+        {
+            "uuid": "0a456c26-1a36-3752-9c17-0489a9d59074",
+            "name": "ПАЗ А800ЕК92",
+            "terminal_type": "FAS",
+            "terminal_id": 336044830,
+            "receive_data": 1
+        },
+        {
+            "uuid": "3708bb4b-6539-3e3e-948d-fa17df3964d8",
+            "name": "Уаз 3151 А573УЕ92 (демонтирован)",
+            "terminal_type": "FAS",
+            "terminal_id": 336052013,
+            "receive_data": 1
+        },
+        {
+            "uuid": "09edc14c-7d91-3df1-aaaf-df2fa98e2a3d",
+            "name": "МАКАР 28717Т А222ОН92",
+            "terminal_type": "FAS",
+            "terminal_id": 336055207,
+            "receive_data": 1
+        },
+        {
+            "uuid": "afebb7dd-6311-38e5-9264-1d592b8f4a6c",
+            "name": "Камаз А817РН82",
+            "terminal_type": "FAS",
+            "terminal_id": 336055208,
+            "receive_data": 1
+        },
+        {
+            "uuid": "b9a634d2-1dc1-3463-8901-c04a2e2f8c9d",
+            "name": "Трактор Т-150 К 0344",
+            "terminal_type": "FAS",
+            "terminal_id": 336055209,
+            "receive_data": 1
+        },
+        {
+            "uuid": "0ec82dae-e94d-3d05-b735-6159251db8a1",
+            "name": "Трактор Т-150 К 0385",
+            "terminal_type": "FAS",
+            "terminal_id": 336055210,
+            "receive_data": 1
+        },
+        {
+            "uuid": "f1689626-aa3c-339d-b580-3835bef0b8e9",
+            "name": "МТЗ-80 0340СА92",
+            "terminal_type": "FAS",
+            "terminal_id": 336055312,
+            "receive_data": 1
+        },
+        {
+            "uuid": "53479451-9f31-359d-8b41-3515cb504216",
+            "name": "Трактор Т-40АМ СА 0342",
+            "terminal_type": "FAS",
+            "terminal_id": 336055313,
+            "receive_data": 1
+        },
+        {
+            "uuid": "84428016-9c9d-34cf-a093-01a848034e12",
+            "name": "Уаз 3151 А573УЕ92",
+            "terminal_type": "FAS",
+            "terminal_id": 336055947,
+            "receive_data": 1
+        },
+        {
+            "uuid": "13a8f918-c16d-318b-a12e-a06072603b55",
+            "name": "Грейдер ДЗ-98 0357 СА 92",
+            "terminal_type": "FAS",
+            "terminal_id": 336055949,
+            "receive_data": 1
+        },
+        {
+            "uuid": "122e96f2-9ef8-3bb1-8c9a-bc98eed8526e",
+            "name": "УАЗ А 084 ЕМ 92",
+            "terminal_type": "FAS",
+            "terminal_id": 336057524,
+            "receive_data": 1
+        },
+        {
+            "uuid": "1dbf0fd7-13ec-303e-b0c3-4fd11e8f2afe",
+            "name": "Газель Е536АХ797",
+            "terminal_type": "FAS",
+            "terminal_id": 336057525,
+            "receive_data": 1
+        },
+        {
+            "uuid": "8af28ef5-db3c-352c-af36-67bf1555c03a",
+            "name": "Т40 0341СА92",
+            "terminal_type": "FAS",
+            "terminal_id": 336057526,
+            "receive_data": 1
+        },
+        {
+            "uuid": "6e2efe8e-c8e6-3c5c-be05-2cf7e738d4b6",
+            "name": "Уаз Т145ВУ797",
+            "terminal_type": "FAS",
+            "terminal_id": 336057573,
+            "receive_data": 1
+        },
+        {
+            "uuid": "53313c8c-83c6-3c80-affe-112a2ff40990",
+            "name": "JCB 3CX 1368РА77",
+            "terminal_type": "FAS",
+            "terminal_id": 336057574,
+            "receive_data": 1
+        },
+        {
+            "uuid": "155e88ea-b2f3-3c2c-83f5-a6a1e798576f",
+            "name": "Газ А697ЕМ 92",
+            "terminal_type": "FAS",
+            "terminal_id": 336057673,
+            "receive_data": 1
+        },
+        {
+            "uuid": "0702dea0-d6ca-3f41-869f-52dcea97139b",
+            "name": "Titon 500 0382 СА 92",
+            "terminal_type": "FAS",
+            "terminal_id": 336061551,
+            "receive_data": 1
+        },
+        {
+            "uuid": "ce5c4c54-3e60-3177-84cc-26b621a5da84",
+            "name": "Everdigm D700 7068НХ77",
+            "terminal_type": "FAS",
+            "terminal_id": 336061650,
+            "receive_data": 1
+        }
+    ],
+    "autocheck_id": 6594,
+    "children": [
+        {
+            "id": 7256,
+            "parentGroupId": 6594,
+            "name": "Топливозаправщики",
+            "objects": [
+                {
+                    "uuid": "76c62387-43c4-3437-9543-5ce087902574",
+                    "name": "Камаз АТЗ А872РА92 (247)",
+                    "terminal_type": "FTC",
+                    "terminal_id": 303010569,
+                    "receive_data": 1
+                },
+                {
+                    "uuid": "5dd792f4-545d-3e0e-bf81-cff96fb42967",
+                    "name": "МАЗ АТЗ А050ЕМ92 (43)",
+                    "terminal_type": "FTC",
+                    "terminal_id": 303016621,
+                    "receive_data": 1
+                },
+                {
+                    "uuid": "ca1141fd-a9d7-3876-9673-325bffad04a5",
+                    "name": "ГАЗ АТЗ А874КТ92 (092)",
+                    "terminal_type": "FTC",
+                    "terminal_id": 303016622,
+                    "receive_data": 1
+                }
+            ],
+            "autocheck_id": 7256,
+            "children": []
+        },
+        {
+            "id": 7316,
+            "parentGroupId": 6594,
+            "name": "Хозтранспорт",
+            "objects": [
+                {
+                    "uuid": "43393628-d9ea-38c5-be69-1d5369f5998f",
+                    "name": "Volkswagen Transporter А 096 ЕМ 92",
+                    "terminal_type": "FAS",
+                    "terminal_id": 254002737,
+                    "receive_data": 1
+                },
+                {
+                    "uuid": "7c417858-5f96-3e31-9a9a-2b71cead5d27",
+                    "name": "Камаз Вахта А655ЕМ92 (149)",
+                    "terminal_type": "FAS",
+                    "terminal_id": 336022164,
+                    "receive_data": 1
+                },
+                {
+                    "uuid": "cfef812d-30c9-398b-a1ea-f5d98eaa9de4",
+                    "name": "МАЗ А/кран А687ЕМ92 (155)",
+                    "terminal_type": "FAS",
+                    "terminal_id": 336039919,
+                    "receive_data": 1
+                },
+                {
+                    "uuid": "19ff264f-adf8-36fe-83ba-3919d3a6e11c",
+                    "name": "Газ А/вышка А 095 ЕМ 92 (093)",
+                    "terminal_type": "FAS",
+                    "terminal_id": 336044589,
+                    "receive_data": 1
+                },
+                {
+                    "uuid": "eb89b657-e21a-3419-814e-12383b7d117b",
+                    "name": "Газ А686ЕА92 (086)",
+                    "terminal_type": "FAS",
+                    "terminal_id": 336044789,
+                    "receive_data": 1
+                },
+                {
+                    "uuid": "c94632ca-4bbd-3a40-b798-89c2024e253d",
+                    "name": "КрАЗ А692ЕМ92 (032)",
+                    "terminal_type": "FAS",
+                    "terminal_id": 336044790,
+                    "receive_data": 1
+                },
+                {
+                    "uuid": "85594357-15b0-3501-8c0f-052b64aa1bc6",
+                    "name": "Камаз А702ЕМ92 (154)",
+                    "terminal_type": "FAS",
+                    "terminal_id": 336044812,
+                    "receive_data": 1
+                },
+                {
+                    "uuid": "0a456c26-1a36-3752-9c17-0489a9d59074",
+                    "name": "ПАЗ А800ЕК92",
+                    "terminal_type": "FAS",
+                    "terminal_id": 336044830,
+                    "receive_data": 1
+                },
+                {
+                    "uuid": "fff32645-5918-36c2-a500-2baf3ffabd67",
+                    "name": "Камаз МКДЗ А668ЕМ92  (151)",
+                    "terminal_type": "FAS",
+                    "terminal_id": 336044831,
+                    "receive_data": 1
+                },
+                {
+                    "uuid": "b809e984-9fe6-3591-81eb-06b757d71325",
+                    "name": "УАЗ У716АО797 (100)",
+                    "terminal_type": "FAS",
+                    "terminal_id": 336045092,
+                    "receive_data": 1
+                },
+                {
+                    "uuid": "3d86c7d1-d4c7-31a5-acd9-decd84172fd8",
+                    "name": "Камаз А493ОО92 (240)",
+                    "terminal_type": "FAS",
+                    "terminal_id": 336047061,
+                    "receive_data": 1
+                },
+                {
+                    "uuid": "2055bb10-0a63-36e2-a212-cb3586558180",
+                    "name": "УАЗ  А079ЕМ92 (148)",
+                    "terminal_type": "FAS",
+                    "terminal_id": 336047551,
+                    "receive_data": 1
+                },
+                {
+                    "uuid": "e034b74d-ff57-3d7d-bb0c-08f5292ac55f",
+                    "name": "Камаз х-ка А116ОО92 (234)",
+                    "terminal_type": "FAS",
+                    "terminal_id": 336047588,
+                    "receive_data": 1
+                },
+                {
+                    "uuid": "a027a959-540e-3f2f-8e36-f9db13a3b7a4",
+                    "name": "ГАЗ АЦВ А091ЕМ92 (117)",
+                    "terminal_type": "FAS",
+                    "terminal_id": 336047589,
+                    "receive_data": 1
+                },
+                {
+                    "uuid": "4b40b965-b9fe-3791-8ccb-587eb201c2d5",
+                    "name": "ГазельА 688 ЕМ 92",
+                    "terminal_type": "FAS",
+                    "terminal_id": 336055948,
+                    "receive_data": 1
+                }
+            ],
+            "autocheck_id": 7316,
+            "children": []
+        },
+        {
+            "id": 7317,
+            "parentGroupId": 6594,
+            "name": "Погрузчики",
+            "objects": [
+                {
+                    "uuid": "2aa8d1e7-749b-3842-a61c-63c47fbbcceb",
+                    "name": "Hyundai 770",
+                    "terminal_type": "FAS",
+                    "terminal_id": 336037932,
+                    "receive_data": 1
+                },
+                {
+                    "uuid": "ec62b666-8a11-341e-ae09-045d7bc0a93b",
+                    "name": "Lonking 5",
+                    "terminal_type": "FAS",
+                    "terminal_id": 336037933,
+                    "receive_data": 1
+                },
+                {
+                    "uuid": "718b8695-1bf0-3da3-8a22-873747a39268",
+                    "name": "Lonking 4",
+                    "terminal_type": "FAS",
+                    "terminal_id": 336037934,
+                    "receive_data": 1
+                },
+                {
+                    "uuid": "9604d022-3371-31a9-bc6f-a15182aa1149",
+                    "name": "Hyundai 780",
+                    "terminal_type": "FAS",
+                    "terminal_id": 336037935,
+                    "receive_data": 1
+                },
+                {
+                    "uuid": "62a75715-19c3-39ba-a436-06dc422809dd",
+                    "name": "Lonking 7",
+                    "terminal_type": "FAS",
+                    "terminal_id": 336044592,
+                    "receive_data": 1
+                },
+                {
+                    "uuid": "9bc5eeb0-3d17-3cef-b5b7-9e7318ddc481",
+                    "name": "Lonking 6",
+                    "terminal_type": "FAS",
+                    "terminal_id": 336044832,
+                    "receive_data": 1
+                },
+                {
+                    "uuid": "b4ce0f47-6e8c-32ad-ad52-f7fbefdf3c51",
+                    "name": "Lonking 3",
+                    "terminal_type": "FAS",
+                    "terminal_id": 336056374,
+                    "receive_data": 1
+                },
+                {
+                    "uuid": "202c7563-ff96-3120-a44e-041b68926cac",
+                    "name": "Lonking 8",
+                    "terminal_type": "FAS",
+                    "terminal_id": 336061087,
+                    "receive_data": 1
+                }
+            ],
+            "autocheck_id": 7317,
+            "children": []
+        },
+        {
+            "id": 7323,
+            "parentGroupId": 6594,
+            "name": "Самосвалы",
+            "objects": [
+                {
+                    "uuid": "77519504-3818-3ea9-bc79-2b98b33790d3",
+                    "name": "Камаз А969РА92 (246)",
+                    "terminal_type": "FAS",
+                    "terminal_id": 236011403,
+                    "receive_data": 1
+                },
+                {
+                    "uuid": "291f7dc3-8121-3248-970f-f38b5c3eca56",
+                    "name": "КамАЗ  А900ОР92 (208)",
+                    "terminal_type": "FAS",
+                    "terminal_id": 336040733,
+                    "receive_data": 1
+                },
+                {
+                    "uuid": "a5786731-67a5-3cc0-b8f5-ed1b2196a83d",
+                    "name": "КамАЗ А772ОВ92 (182)",
+                    "terminal_type": "FAS",
+                    "terminal_id": 336040734,
+                    "receive_data": 1
+                },
+                {
+                    "uuid": "80b49a08-a8c6-328a-bfa3-f376e3e9338a",
+                    "name": "Камаз  В167КК797 (236)",
+                    "terminal_type": "FAS",
+                    "terminal_id": 336040735,
+                    "receive_data": 1
+                },
+                {
+                    "uuid": "cae3c2c9-c7ed-36db-b326-5378568d2a9f",
+                    "name": "Камаз А192КЕ797 (239)",
+                    "terminal_type": "FAS",
+                    "terminal_id": 336042403,
+                    "receive_data": 1
+                },
+                {
+                    "uuid": "48b44dc0-16c6-3c07-96a9-8cebf62dce9c",
+                    "name": "Камаз  А862ОВ92 (178)",
+                    "terminal_type": "FAS",
+                    "terminal_id": 336042412,
+                    "receive_data": 1
+                },
+                {
+                    "uuid": "e6facf58-4fc9-3ad3-ad4c-b0a3528e80ea",
+                    "name": "Камаз  Н629КР797 (238)",
+                    "terminal_type": "FAS",
+                    "terminal_id": 336042413,
+                    "receive_data": 1
+                },
+                {
+                    "uuid": "d6e08b7b-6ba6-3319-844c-dc28d036a72d",
+                    "name": "Камаз А931ОР92 (210)",
+                    "terminal_type": "FAS",
+                    "terminal_id": 336042414,
+                    "receive_data": 1
+                },
+                {
+                    "uuid": "93bfe78c-3cea-332c-b57a-e55c529567c9",
+                    "name": "Камаз  Е891КН797 (237)",
+                    "terminal_type": "FAS",
+                    "terminal_id": 336042419,
+                    "receive_data": 1
+                },
+                {
+                    "uuid": "0c4e2e6f-8e76-3a2b-bf2d-753a891a57be",
+                    "name": "Камаз А794ОВ92 (180)",
+                    "terminal_type": "FAS",
+                    "terminal_id": 336042420,
+                    "receive_data": 1
+                },
+                {
+                    "uuid": "7384aa6a-2d10-3f2a-ba65-a817fe0ba5e0",
+                    "name": "Камаз А277КЕ797 (235)",
+                    "terminal_type": "FAS",
+                    "terminal_id": 336042423,
+                    "receive_data": 1
+                },
+                {
+                    "uuid": "28cd852f-1710-3d7e-90bc-c075f5df0558",
+                    "name": "Камаз А058РС92 (179)",
+                    "terminal_type": "FAS",
+                    "terminal_id": 336042424,
+                    "receive_data": 1
+                },
+                {
+                    "uuid": "792448f2-5ba2-30d9-9b3f-f43721ffcb8a",
+                    "name": "Камаз А930ОР92 (209)",
+                    "terminal_type": "FAS",
+                    "terminal_id": 336042427,
+                    "receive_data": 1
+                }
+            ],
+            "autocheck_id": 7323,
+            "children": []
+        },
+        {
+            "id": 7324,
+            "parentGroupId": 6594,
+            "name": "Экскаваторы",
+            "objects": [
+                {
+                    "uuid": "126cf707-3dbc-3eb3-b38d-d76806b499c4",
+                    "name": "Hyundai 360",
+                    "terminal_type": "FAS",
+                    "terminal_id": 336037936,
+                    "receive_data": 1
+                },
+                {
+                    "uuid": "a0a9f4bd-53fe-39a9-abe0-c4cfab227619",
+                    "name": "HYUNDAI R300 №2 8673 НТ77",
+                    "terminal_type": "FAS",
+                    "terminal_id": 336039917,
+                    "receive_data": 1
+                },
+                {
+                    "uuid": "dd73fc2d-2304-39d7-8bac-5b5831295bd8",
+                    "name": "HYUNDAI R300 №1 0645 РА77",
+                    "terminal_type": "FAS",
+                    "terminal_id": 336039918,
+                    "receive_data": 1
+                },
+                {
+                    "uuid": "5bad7d59-20d8-327e-b3b0-ee7553adda17",
+                    "name": "ЕК-450 FS №4 9763 РК77",
+                    "terminal_type": "FAS",
+                    "terminal_id": 336044829,
+                    "receive_data": 1
+                },
+                {
+                    "uuid": "0e8ea693-b209-37ab-9fe3-95e115bdd963",
+                    "name": "ЕК-450 FS №3 9762 РК77",
+                    "terminal_type": "FAS",
+                    "terminal_id": 336052000,
+                    "receive_data": 1
+                }
+            ],
+            "autocheck_id": 7324,
+            "children": []
+        },
+        {
+            "id": 7392,
+            "parentGroupId": 6594,
+            "name": "Белазы",
+            "objects": [
+                {
+                    "uuid": "c8fcae36-1444-3be2-bc25-4c5ea054eec1",
+                    "name": "БЕЛАЗ №17",
+                    "terminal_type": "FAS",
+                    "terminal_id": 336039920,
+                    "receive_data": 1
+                },
+                {
+                    "uuid": "7c28e8ff-13f3-3981-bdc8-bd3576220f42",
+                    "name": "БЕЛАЗ №14",
+                    "terminal_type": "FAS",
+                    "terminal_id": 336042396,
+                    "receive_data": 1
+                },
+                {
+                    "uuid": "ffc1b3da-ed4e-3ab3-8e88-4e2b431c31f4",
+                    "name": "БЕЛАЗ № 1",
+                    "terminal_type": "FAS",
+                    "terminal_id": 336042397,
+                    "receive_data": 1
+                },
+                {
+                    "uuid": "8ae4cbfb-aeed-3ac2-b9b9-abd44766fef7",
+                    "name": "БЕЛАЗ № 9",
+                    "terminal_type": "FAS",
+                    "terminal_id": 336042398,
+                    "receive_data": 1
+                },
+                {
+                    "uuid": "dc29033c-c15e-3d50-8cb0-97951cb5ada0",
+                    "name": "БЕЛАЗ № 4",
+                    "terminal_type": "FAS",
+                    "terminal_id": 336042422,
+                    "receive_data": 1
+                },
+                {
+                    "uuid": "a3c036eb-c718-3f46-b7de-12a2461fc5e1",
+                    "name": "БЕЛАЗ №18",
+                    "terminal_type": "FAS",
+                    "terminal_id": 336042425,
+                    "receive_data": 1
+                },
+                {
+                    "uuid": "60f839c9-4b89-3857-b8bd-48d648e83360",
+                    "name": "БЕЛАЗ №16",
+                    "terminal_type": "FAS",
+                    "terminal_id": 336042426,
+                    "receive_data": 1
+                },
+                {
+                    "uuid": "8cea60ef-46f4-3012-8596-cf00f4e35d67",
+                    "name": "БЕЛАЗ №77",
+                    "terminal_type": "FAS",
+                    "terminal_id": 336044849,
+                    "receive_data": 1
+                },
+                {
+                    "uuid": "7ff509a7-0896-38c4-9923-a5f21d4b0dc9",
+                    "name": "БЕЛАЗ №55 (7540) 0424СА92",
+                    "terminal_type": "FAS",
+                    "terminal_id": 336055950,
+                    "receive_data": 1
+                }
+            ],
+            "autocheck_id": 7392,
+            "children": []
+        },
+        {
+            "id": 7480,
+            "parentGroupId": 6594,
+            "name": "Бульдозеры",
+            "objects": [
+                {
+                    "uuid": "d019283e-d3d2-31da-8b65-d9afab365d87",
+                    "name": "Бульдозер Т-15.01. ЯБР-1",
+                    "terminal_type": "FAS",
+                    "terminal_id": 336044791,
+                    "receive_data": 1
+                },
+                {
+                    "uuid": "1c3f202c-b83a-3705-8b02-b1afc18835c5",
+                    "name": "Бульдозер Т-15.01. КБР-1",
+                    "terminal_type": "FAS",
+                    "terminal_id": 336044792,
+                    "receive_data": 1
+                },
+                {
+                    "uuid": "c9d9494a-75ba-3263-a3a8-6eae27344370",
+                    "name": "Бульдозер Т-11.02.ЯБР-1",
+                    "terminal_type": "FAS",
+                    "terminal_id": 336047554,
+                    "receive_data": 1
+                }
+            ],
+            "autocheck_id": 7480,
+            "children": []
+        },
+        {
+            "id": 7642,
+            "parentGroupId": 6594,
+            "name": "Keestrack",
+            "objects": [
+                {
+                    "uuid": "d3cadbcd-89d2-3ee0-8674-4ae1fa4bc271",
+                    "name": "Keestrack  R5",
+                    "terminal_type": "FAS",
+                    "terminal_id": 336044591,
+                    "receive_data": 1
+                }
+            ],
+            "autocheck_id": 7642,
+            "children": []
+        },
+        {
+            "id": 8236,
+            "parentGroupId": 6594,
+            "name": "Тепловозы",
+            "objects": [
+                {
+                    "uuid": "91d3746c-c802-3dd6-8ee6-32695da62b39",
+                    "name": "ТЭМ 2М №025",
+                    "terminal_type": "FAS",
+                    "terminal_id": 303019202,
+                    "receive_data": 1
+                }
+            ],
+            "autocheck_id": 8236,
+            "children": []
+        }
+    ]
+}
