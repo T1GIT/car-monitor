@@ -32,6 +32,7 @@ jobs:
         with:
           publish-dir: './dist'
           github-token: ${{ secrets.GITHUB_TOKEN }}
+          github-deployment-environment: Netlify
         env:
           NETLIFY_AUTH_TOKEN: ${{ secrets.NETLIFY_ACCESS_TOKEN }}
           NETLIFY_SITE_ID: ${{ secrets.NETLIFY_SITE_ID }}
