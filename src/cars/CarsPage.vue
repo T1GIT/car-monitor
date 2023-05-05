@@ -49,10 +49,6 @@ const { range, fuel, track } = useSelectedVehicleStats()
       padding: 10px;
     }
 
-    &.table, &.map, &.info {
-      min-width: 100px;
-    }
-
     .cars-table, .car-map, .car-info {
       flex: 1;
     }
