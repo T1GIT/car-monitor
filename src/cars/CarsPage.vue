@@ -7,9 +7,11 @@ import { useSelectedVehicleStats } from '@/cars/stores/selected-vehicle-stats'
 import CarMap from '@/cars/components/TheCarMap.vue'
 import TheCarsTable from '@/cars/components/TheCarsTable.vue'
 import TheCarInfo from '@/cars/components/TheCarInfo.vue'
+import { useSelectedVehicleState } from '@/cars/stores/selected-vehicle-state'
 
 const { vehicles } = useVehicles()
-const { vehicle, state } = useSelectedVehicle()
+const { vehicle } = useSelectedVehicle()
+const { state } = useSelectedVehicleState()
 const { range, fuel, track } = useSelectedVehicleStats()
 </script>
 

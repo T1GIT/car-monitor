@@ -1,7 +1,4 @@
-import {
-  createGlobalState,
-  createSharedComposable,
-} from '@vueuse/core'
+import { createGlobalState, createSharedComposable } from '@vueuse/core'
 import { readonly, shallowRef, watch } from 'vue'
 import moment from 'moment'
 import type { FuelData } from '@/omnicomm/dto/fuel-data'
@@ -20,19 +17,25 @@ export const useSelectedVehicleStats = createSharedComposable(() => {
 
   const { vehicle } = useSelectedVehicle()
 
-  watch(
-    [vehicle, range],
-    () => {
-      if (vehicle.value) {
-        void omnicommReportsService.fuel(vehicle.value.terminal_id, range.value[0], range.value[1])
-          .then(({ data }) => fuel.value = data.tankData?.at(0)?.data)
+  async function fetchFuel() {
+    if (vehicle.value) {
+      const { data } = await omnicommReportsService.fuel(vehicle.value.terminal_id, range.value[0], range.value[1])
+      fuel.value = data.tankData?.at(0)?.data
+    }
+  }
 
-        void omnicommReportsService.track(vehicle.value.terminal_id, range.value[0], range.value[1])
-          .then(({ data }) => track.value = data.track)
-      }
-    },
-    { immediate: true },
-  )
+  async function fetchTrack() {
+    if (vehicle.value) {
+      const { data } = await omnicommReportsService.track(vehicle.value.terminal_id, range.value[0], range.value[1])
+      track.value = data.track
+    }
+  }
+
+  async function fetch() {
+    await Promise.all([fetchFuel(), fetchTrack()])
+  }
+
+  watch([vehicle, range], fetch, { immediate: true })
 
   return {
     range,

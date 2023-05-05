@@ -1,6 +1,6 @@
 import {
   createGlobalState,
-  createSharedComposable,
+  createSharedComposable, useIntervalFn,
 } from '@vueuse/core'
 import { readonly, shallowRef, watch } from 'vue'
 import moment from 'moment'
@@ -18,16 +18,15 @@ export const useSelectedVehicleRoute = createSharedComposable(() => {
 
   const { vehicle } = useSelectedVehicle()
 
-  watch(
-    [vehicle, range],
-    () => {
-      if (vehicle.value) {
-        void omnicommReportsService.track(vehicle.value.terminal_id, range.value[0], range.value[1])
-          .then(({ data }) => route.value = data.track)
-      }
-    },
-    { immediate: true },
-  )
+  async function fetch() {
+    if (vehicle.value) {
+      const { data } = await omnicommReportsService.track(vehicle.value.terminal_id, range.value[0], range.value[1])
+      route.value = data.track
+    }
+  }
+
+  watch([vehicle, range], fetch, { immediate: true })
+  useIntervalFn(fetch, 10000)
 
   return {
     range,

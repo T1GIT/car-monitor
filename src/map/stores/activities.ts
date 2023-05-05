@@ -24,7 +24,7 @@ export const useActivities = createSharedComposable(() => {
       activities.value = data
     }
   }
-  whenever(vehicles, fetch)
+  whenever(vehicles, fetch, { immediate: true })
   useIntervalFn(fetch, 10000)
 
   return {
