@@ -17,6 +17,7 @@ const info = computed<{ icon: string; value: string }[]>(
     { icon: 'bi-fuel-pump', value: state.value ? `${state.value.currentFuel} л.` : '' },
     { icon: 'bi-lightning-charge', value: state.value ? `${state.value.voltage} в.` : '' },
     { icon: 'bi-key', value: state.value ? (state.value.currentIgn ? 'Заведена' : 'Заглушена') : '' },
+    { icon: 'bi-geo', value: state.value ? (`${state.value?.lastGPS?.latitude}, ${state.value?.lastGPS?.longitude}`) : '' },
   ])
 </script>
 
