@@ -22,7 +22,7 @@ const info = computed<{ icon: string; value: string }[]>(
 </script>
 
 <template>
-  <Panel class="car-state-component" :header="vehicle.name">
+  <Panel class="car-state-component" :header="vehicle.name" toggleable>
     <div v-for="item of info" :key="item.icon" class="item">
       <i class="icon pi" :class="item.icon" />
 
@@ -34,7 +34,9 @@ const info = computed<{ icon: string; value: string }[]>(
 <style scoped lang="scss">
 .car-state-component {
   ::v-deep(.p-panel-header) {
-    justify-content: center;
+    .p-panel-title {
+      margin: 0 auto;
+    }
   }
 
   ::v-deep(.p-panel-content) {

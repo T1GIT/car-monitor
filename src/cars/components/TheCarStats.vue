@@ -60,12 +60,6 @@ const dataset = computed(() => chartType.value.value === 'fuel' ? fuelDataset.va
 
 <template>
   <div class="car-stats-component">
-    <div class="header">
-      <i class="icon pi bi-bar-chart" />
-
-      <span class="text">Статистика</span>
-    </div>
-
     <div class="filter">
       <SelectButton v-model="chartType" class="type-selector" :options="chartTypeOptions" option-label="value" data-key="value">
         <template #option="{ option }">
@@ -90,21 +84,6 @@ const dataset = computed(() => chartType.value.value === 'fuel' ? fuelDataset.va
   display: flex;
   flex-direction: column;
   gap: 20px;
-
-  .header {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 15px;
-
-    .icon {
-      font-size: 24px;
-    }
-
-    .text {
-      font-size: 24px;
-    }
-  }
 
   .filter {
     display: flex;
