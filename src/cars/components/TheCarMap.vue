@@ -79,7 +79,10 @@ const primaryColor = useCssVar('--primary-color')
   .map {
     .marker {
       width: 40px;
-      height: 40px;
+
+      &.inactive {
+        filter: grayscale(1);
+      }
     }
   }
 }

@@ -25,8 +25,8 @@ const { vehicle } = useSelectedVehicle()
 const { vehicles } = useVehicles()
 const router = useRouter()
 async function goVehicle(uuid: string) {
-  vehicle.value = vehicles.value?.find(vehicle => vehicle.uuid === uuid)
   await router.push({ name: RouteName.CARS })
+  vehicle.value = vehicles.value?.find(vehicle => vehicle.uuid === uuid)
 }
 </script>
 
@@ -54,6 +54,7 @@ async function goVehicle(uuid: string) {
           :lng-lat="lngLatConvertor.fromPoint(activity)"
           anchor="center"
           :rotation="activity.direction"
+          @hover="$event.target.click()"
         >
           <MapboxPopup>
             <div class="popup">
