@@ -46,7 +46,12 @@ const primaryColor = useCssVar('--primary-color')
         :rotation="state.lastGPSDir"
       >
         <template #icon>
-          <img class="marker" src="@/shared/assets/marker.png?url" alt="marker">
+          <img
+            class="marker"
+            :class="{ inactive: !state.currentIgn }"
+            src="@/shared/assets/marker.png?url"
+            alt="marker"
+          >
         </template>
       </MapboxMarker>
 
